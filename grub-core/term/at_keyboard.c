@@ -355,7 +355,7 @@ set_scancodes (void)
     }
 
 #if !USE_SCANCODE_SET
-  current_set = 1;
+  current_set = grub_keyboard_orig_set;
   return;
 #else
 
